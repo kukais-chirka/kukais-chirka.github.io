@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkleHeart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/assets/resource/scss/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+    <script src="/assets/js/theme.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {   //Funkcija lai visās lapās ir header un footer JQUERY
+            $("#header").load("/assets/components/header.html");
+            $("#footer").load("/assets/components/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div class="fluid-container">
+        <div id="header"></div>
+
+        <div class="ideja-container mobile-container text-center ">
+            <h1>IDEJA</h1>
+            <p class="text2">Juris Gogulis ir pasaules iedvesmots mākslinieks–horeogrāfs un režisors, kura ikdiena
+                aizrit radot aizkustinošus un iedvesmojošus radošus projektus. Juris ir pārliecināts, ka ir vērts ticēt
+                katram savam sapnim un censties to īstenot. Kā smejas pats - daudzu draugu sapņiem viņš tic vairāk, nekā
+                viņi paši!
+            </p>
+        </div>
+
+        <div class="big-picture-container">
+          <div class="linear-bg">
+            <img class="vector-top" src="/assets/img/Vector.png" alt="Apgrauztā Mala">
+            <!-- <img class="big-picture" src="/assets/img/Juris_1.png" alt="Lielā bilde ar puisi cepurē"> -->
+            <div class="text-container">
+                <h3>“Kopš 3 gadu vecuma mani ir audzinājusi mamma, pēc viņas piemēra esmu sapratis, cik sieviete ir
+                    spēcīga
+                    un varoša. Vēlos atlīdzināt un izveidot platformu, kurā satikties un palīdzēt cilvēkiem piepildīt
+                    savus
+                    sapņus.”
+                </h3>
+            </div>
+            <img class="vector-bot" src="/assets/img/vector_2.png" alt="Apgrauztā Mala"> 
+          </div>
+        </div>
+        <div class="quotes-container mobile-container text-left">
+            <div> 
+                <div class="author d-flex flex-column">
+                <h3>Ken Ludden</h3>
+                <span class="text2">Director, Margot Fonteyn Academy of Ballet</span>
+                </div>
+                <div class="comment">
+                <p class="text2" >For it is Juris work that is the <br> light the human race needs so badly these days.
+                   His vision is inspired and talent is beyond measure.</p>
+                </div>
+                <div class="arrow-container d-flex justify-content-between ">
+                    <div><img src="/assets/img/Poga _transparent.png" alt="Bulta ar _transparent"></div>
+                    <div><img src="/assets/img/Poga _fill.png" alt="Bulta ar krāsu"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>

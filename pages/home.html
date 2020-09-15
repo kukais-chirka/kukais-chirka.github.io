@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkleHeart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/assets/resource/scss/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"/>
+    <script src="/assets/js/theme.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+    $(function(){   //Funkcija lai visās lapās ir header un footer
+    $("#header").load("/assets/components/header.html");  
+    $("#footer").load("/assets/components/footer.html"); 
+    });
+    </script>
+</head>
+<body>
+
+    <div class="fluid-container">     <!-- fluidContainer -->
+      <div id="header"></div> 
+      <!-- SparkleVideo -->
+        <div class="video-container">  <!-- Video-container -->
+            <img src="/assets/img/SparkleVideo1.png" alt="">
+            <svg class="svg-box" width="100" height="100">    <!-- video-pause -->
+                <circle class="circle" cx="50" cy="50" r="40" stroke="#FFA800" stroke-width="4" fill="#FFA800" />
+                <circle class="mobCircle" cx="50" cy="50" r="25" stroke="#FFA800" stroke-width="4" fill="#FFA800" />
+                <div class="triangle"></div><!-- video-pause -->
+            </svg>
+        </div> <!-- Video-container -->
+
+        <!--about block with text and gallery -->
+        <div class="aboutContainer">   <!-- about-container -->
+            <div class="textBox mobile-container d-flex"> <!-- textBox -->
+                <span class="text2">SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat
+                    pārdrošākos
+                    sapņus. Šeit
+                    satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli
+                    padarītu
+                    par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai -
+                    tiek
+                    radīti arī 99 stāsti par Latvijas sievietēm.
+                </span>
+            </div><!-- textBox -->
+
+
+            <div class="gallery-container"><!-- Gallery Container -->
+                <img class="vector-top" src="/assets/img/Vector.png" alt="Apgrauztā Mala">
+                
+                <div class="d-flex flex-fill">
+                    <img class="img1" src="/assets/img/Zanda_1.png" alt="Galerijas Bilde#1">
+                    <img class="img2 " src="/assets/img/Sibilla_4.png" alt="Galerijas Bilde#2">
+                </div>
+
+                <div class="d-flex flex-fill">
+                    <div class="flex-column-container ">
+                        <img class="img3" src="/assets/img/Brinuma_meita-15.png" alt="Galerijas Bilde#3">
+                        <img class="img4" src="/assets/img/Alina_1_1.png" alt="Galerijas Bilde#4">
+                    </div>
+                    <img class="img5" src="/assets/img/Anda_2_1.png" alt="Galerijas Bilde#5">
+                </div>
+
+                <img class="vector-bot" src="/assets/img/Vector.png" alt="Apgrauztā Mala">
+            </div><!-- Gallery Container -->
+
+        </div><!-- about-container -->
+
+        <div class="formContainer"> <!-- form-container -->
+            <div class="doYouWantBox"> <!-- doYouWantBox -->
+                <div class="btnBox text-center "><!-- btnBox -->
+                    <div>
+                        <h3 class="">VĒLIES PIEPILDĪT SAVU SAPNI?</h3>
+                        <div><button href="#" class="button text2">Sapņotājiem</button></div>
+                    </div>
+                </div><!-- btnBox -->
+
+                <div class="btnBox text-center "><!-- btnBox -->
+                    <div>
+                        <h3 class="">VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?</h3>
+                        <div><button href="#" class="button text2">Uzņēmējiem</button></div>
+                    </div>
+                </div>
+            </div><!-- doYouWantBox -->
+
+            <div class="formStart text-left mobile-container"> <!-- FormStart -->
+                <h2>SAZINĀTIES AR MUMS</h2>
+                <div class="form"> <!-- FormInputs -->
+                    <div class="d-sm-flex">
+                        <input type="text" class="textInput mr-2" id="name" name="name" placeholder="Vārds, Uzvārds*"> <!-- NameInput -->
+                        <input type="text" class="textInput ml-sm-2" id="phone" name="phone" placeholder="E-pasts*"> <!-- e-mail -->
+                    </div>
+                    <input type="text" class="textInput" id="name" name="name" placeholder="Telefons*"><!-- Phone -->
+                    <textarea rows="9" class="textInput" placeholder="Jautājums, vai komentārs"></textarea><!-- Q or Comment -->
+                    <span class="obligation">*obligāti aizpildāmie lauki</span>
+
+                    <div class="d-flex acceptTerms "> <!-- Terms -->
+                        <input class="checkbox" type="checkbox">
+                        <p> Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un
+                            tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</p>
+                    </div> <!-- Terms -->
+
+                    <div id="formBtn" class="text-center"><button href="#" class="button text2">Sūtīt</button></div>
+                </div>
+            </div>
+        </div> <!--formContainer-->
+       
+
+        <div class="sponsorContainer text-center mobile-container"><!--sponsorContainer-->
+            <img class="vector-top" src="/assets/img/Vector_orange.png" alt="Apgrauztā Mala">
+            <h3>ATBALSTĪTĀJI</h3>
+            <div class="imgRow"><!--imgBox-->
+                <div><img id="spons1" src="/assets/img/getlogo_1.png" alt="Pirmais Sponsors"></div>
+                <div><img id="spons2" src="/assets/img/sem_logo-2_1.png" alt="Otrais Sponsors"></div>
+                <div><img id="spons3" src="/assets/img/Citybee-logo_1.png" alt="Trešais Sponsors"></div>
+                <div><img id="spons4" src="/assets/img/logo1_1.png" alt="Ceturtais Sponsors"></div>
+            </div>
+            
+            <!--imgBox-->
+        </div> <!--sponsorContainer-->
+    
+
+        <div id="footer"></div>
+    </div> <!--fluidContainer-->
+   
+</body>
+</html>

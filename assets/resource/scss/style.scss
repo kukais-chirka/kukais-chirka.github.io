@@ -53,7 +53,11 @@ html{scroll-behavior: smooth;}
 
 h1,h2,h3 {font-family: headerFont;}
 
-h1 {font-size: 48px;}
+h1 {font-size: 48px;
+    @include mobile{
+        font-size: 36px;
+        line-height: 53px;
+    }}
 
 h2 {font-size: 30px;}
 
@@ -62,12 +66,12 @@ h3 {font-size: 24px;
 
 .text1 {
     font-size: 24px;
-    font-family: text1Font;
+    font-family: text1Font; //medium
     font-weight: 500;
 }
 .text2, a {
     font-size: 18px;
-    font-family: text2Font;
+    font-family: text2Font; //regular
     line-height: 22px;
 }
 
@@ -92,6 +96,8 @@ img {
     padding: 17px;
     border-radius: 30px;
   }
+
+
 //NavBar
 .nav-container {
     display: flex;
@@ -230,7 +236,7 @@ img {
         font-size: 18px;
     }
 }
-
+////////////////////////////////////////////HOME PAGE/////////////////////////////////
 //SparkleVideo
 .video-container {//VideoContainer
     .svg-box {
@@ -448,12 +454,6 @@ img {
         top: -17px;
         left: 0;
     }
-    .vector-bot {
-        position: absolute;
-        width: 100%;
-        bottom: -15px;
-        left: 0;
-    }
     h3 {
         padding-top: 83px;
     }
@@ -486,7 +486,6 @@ img {
             #spons4 {max-width: 49px;}
             height: 253px;
         }
-
     }
     @include mobile {
         .imgRow {
@@ -501,10 +500,164 @@ img {
         
     }//responsive sponsor elements
 } //sponsortContainer
+////////////////////////////////////////////HOME PAGE END/////////////////////////////////
+
+////////////////////////////////////////////IDEJA PAGE/////////////////////////////////
+
+.ideja-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 504px;
+    max-width: 608px;
+    width: 100%;
+    color: #2f4858;
+    @include mobile{
+            height: 303px;
+    }
+        .text2{
+            margin-top:60px ;
+            @include mobile{
+                font-size: 12px;
+                line-height:15px;
+                margin-top: 30px;
+            }
+        }
+        
+}
+.big-picture-container{
+    background-image: url(/assets/img/Juris_desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:705px;
+    @include tablet{
+    // background-image: url(/assets/img/Juris_tablet.png);
+    height: 430px;
+    }
+    @include mobile{
+    height: 476px;
+    background-image: url(/assets/img/Juris_mobile.png);
+    }
+    .big-picture{
+        z-index: -1;
+    }
+    .linear-bg{
+        background: linear-gradient(0deg, rgba(47, 72, 88, 0.8) 18.63%, rgba(47, 72, 88, 0) 49.21%);
+        height:705px;
+        @include tablet{
+        height: 430px;
+        }
+        @include mobile{
+        height: 476px;
+        }
+    }
+    .text-container{
+        text-align:center;
+        position: absolute;
+        bottom: 9%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 818px;
+        color: $white;
+        @include tablet{
+        max-width: 595px;
+        }
+        @include mobile{
+        max-width: 280px;
+            h3{
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+    .vector-top{
+        width: 100%;
+        top: -1px;
+        position: absolute;
+
+    }
+    .vector-bot{
+        width: 100%;
+        bottom: -1px;
+        position: absolute;
+        left: 0px;
+    }
+}
+
+
+
+.quotes-container{
+    height: 566px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        .comment{
+            max-width:602px;
+            padding:30px 0px;
+
+            p{
+                font-style: italic;
+                font-size: 24px;
+                line-height: 29px;
+                @include mobile{
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+        }
+        .arrow-container{
+            max-width: 70px;
+            @include tablet{
+                max-width: 92px;
+            }
+        }
+    @include mobile{
+    height: 457px; 
+        h3{
+           font-size:18px;
+           line-height: 27px;
+        }
+        .comment{
+            max-width: 279px;
+            padding: 20px 0px 30px 0px;
+        }
+        .text2{
+            font-size: 14px;
+            line-height: 17px;
+        }
+        .arrow-container{
+            max-width: 70px;
+        }
+    }
+}
+// @include tablet{
+//     .quotes-container{
+//         p{
+//         font-size:18px;
+//         line-height:15px;
+//         }
+//     }
+
+// }
+
+
+
+
+
+
 
 .footer { // both footer
     background-color: $blue;
     color: $white;
+    .vector-top{
+        top: -18px;
+        left: 0px;
+        position: absolute;
+    }
     span {
         margin-bottom: 10px;
     }
@@ -608,8 +761,15 @@ img {
 }
 @include mobile {
     .footer {
+        background-image: url(/assets/img/mobile-footer-2.png);
+        background-size: cover;
+        background-color: #0000;
+        .vector-top{
+            display: none;
+        }
         .mobile-footer {
             height: 483px;
+
             .row1 {
                 img {
                     max-width: 100px;
@@ -680,7 +840,9 @@ img {
     }
 }
 @include mobile {
-    .footer-container,
+    .footer-container{
+        padding: 30px 20px;
+    }
     .mobile-container
     {
         padding: 0px 20px;

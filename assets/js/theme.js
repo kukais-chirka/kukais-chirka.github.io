@@ -1,3 +1,12 @@
+
+
+function loadComponents(){
+  document.getElementById("header").load("header.html");
+
+};
+
+
+
 function openNavbar() {
     var x = document.getElementById("topNav");
     var y = document.getElementById("hamburger");
@@ -12,9 +21,6 @@ function openNavbar() {
     console.log(y.className);
     console.log(x.className);
   }
-
-
-
   var mybutton = document.getElementById("scrollBtn");
   window.onscroll = function() {scrollFunction()};
   function scrollFunction() {

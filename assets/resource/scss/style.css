@@ -37,6 +37,13 @@ h1 {
   font-size: 48px;
 }
 
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 36px;
+    line-height: 53px;
+  }
+}
+
 h2 {
   font-size: 30px;
 }
@@ -528,13 +535,6 @@ img {
   left: 0;
 }
 
-.sponsorContainer .vector-bot {
-  position: absolute;
-  width: 100%;
-  bottom: -15px;
-  left: 0;
-}
-
 .sponsorContainer h3 {
   padding-top: 83px;
 }
@@ -625,9 +625,200 @@ img {
   }
 }
 
+.ideja-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: 504px;
+  max-width: 608px;
+  width: 100%;
+  color: #2f4858;
+}
+
+@media screen and (max-width: 700px) {
+  .ideja-container {
+    height: 303px;
+  }
+}
+
+.ideja-container .text2 {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 700px) {
+  .ideja-container .text2 {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 30px;
+  }
+}
+
+.big-picture-container {
+  background-image: url(/assets/img/Juris_desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 705px;
+}
+
+@media screen and (max-width: 920px) {
+  .big-picture-container {
+    height: 430px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .big-picture-container {
+    height: 476px;
+    background-image: url(/assets/img/Juris_mobile.png);
+  }
+}
+
+.big-picture-container .big-picture {
+  z-index: -1;
+}
+
+.big-picture-container .linear-bg {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(18.63%, rgba(47, 72, 88, 0.8)), color-stop(49.21%, rgba(47, 72, 88, 0)));
+  background: linear-gradient(0deg, rgba(47, 72, 88, 0.8) 18.63%, rgba(47, 72, 88, 0) 49.21%);
+  height: 705px;
+}
+
+@media screen and (max-width: 920px) {
+  .big-picture-container .linear-bg {
+    height: 430px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .big-picture-container .linear-bg {
+    height: 476px;
+  }
+}
+
+.big-picture-container .text-container {
+  text-align: center;
+  position: absolute;
+  bottom: 9%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 818px;
+  color: #fff;
+}
+
+@media screen and (max-width: 920px) {
+  .big-picture-container .text-container {
+    max-width: 595px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .big-picture-container .text-container {
+    max-width: 280px;
+  }
+  .big-picture-container .text-container h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.big-picture-container .vector-top {
+  width: 100%;
+  top: -1px;
+  position: absolute;
+}
+
+.big-picture-container .vector-bot {
+  width: 100%;
+  bottom: -1px;
+  position: absolute;
+  left: 0px;
+}
+
+.quotes-container {
+  height: 566px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quotes-container .comment {
+  max-width: 602px;
+  padding: 30px 0px;
+}
+
+.quotes-container .comment p {
+  font-style: italic;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media screen and (max-width: 700px) {
+  .quotes-container .comment p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.quotes-container .arrow-container {
+  max-width: 70px;
+}
+
+@media screen and (max-width: 920px) {
+  .quotes-container .arrow-container {
+    max-width: 92px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .quotes-container {
+    height: 457px;
+  }
+  .quotes-container h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .quotes-container .comment {
+    max-width: 279px;
+    padding: 20px 0px 30px 0px;
+  }
+  .quotes-container .text2 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .quotes-container .arrow-container {
+    max-width: 70px;
+  }
+}
+
 .footer {
   background-color: #2f4858;
   color: #fff;
+}
+
+.footer .vector-top {
+  top: -18px;
+  left: 0px;
+  position: absolute;
 }
 
 .footer span {
@@ -768,6 +959,14 @@ img {
 }
 
 @media screen and (max-width: 700px) {
+  .footer {
+    background-image: url(/assets/img/mobile-footer-2.png);
+    background-size: cover;
+    background-color: #0000;
+  }
+  .footer .vector-top {
+    display: none;
+  }
   .footer .mobile-footer {
     height: 483px;
   }
@@ -848,7 +1047,9 @@ img {
 }
 
 @media screen and (max-width: 700px) {
-  .footer-container,
+  .footer-container {
+    padding: 30px 20px;
+  }
   .mobile-container {
     padding: 0px 20px;
   }
